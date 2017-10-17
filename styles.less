@@ -1,0 +1,450 @@
+/* Import */
+@import "fonts.less";
+@import "reset.less";
+
+/*Variables*/
+
+@mainfont: 'Open Sans';
+@secfont: 'Merriweather';
+@ffont: 'serif';
+@bccolor: #5c5858;
+@sidecolor: #eeeeee;
+@cred: #ce003d;
+@adcolor: #5f0736;
+@fontcolor: #2f091d;
+@hovcolor: #d9cdbf;
+@container: 960px;
+
+
+
+/* Header */
+
+.header {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    position: relative;
+    
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: @bccolor;
+        position: fixed;
+        padding: 15px;
+        
+        input[name="paieska"] {
+            
+            background-color: @hovcolor;
+            border-radius: 15px;
+        }
+        
+        input[type="submit"] {
+            color:@cred;
+            font-size: 14px;
+            background-color: @bccolor;
+        }
+        
+        input[type="submit"]:hover {background-color: @hovcolor;}
+        
+        
+        > * {
+        flex: 0 1 auto;
+        }
+   .search {
+font-family: @mainfont, @ffont;
+font-weight: 800;
+font-size: 22px;
+line-height: 30px;
+margin-right: 50px;       
+}
+.menu {
+    ul li {
+        display: inline-block;
+        margin-left: 20px;
+ a {
+font-family: @mainfont, @ffont;
+font-weight: 700;
+font-size: 1em;
+line-height: 1.2em;
+text-transform: uppercase;
+text-decoration: none;
+color: @cred;
+}
+              a:hover {background-color: @hovcolor;
+                  padding: 15px;}
+
+}
+}
+}   
+    .center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        min-width: 60%;
+        min-height: 50%;
+        padding: 20px;
+        transform: translate(-50%, -50%);
+        flex-wrap: wrap;
+        
+        h1{
+            font-family: @mainfont, @ffont;
+            font-weight: 800;
+            font-size: 50px;
+            color: @fontcolor;
+            letter-spacing: 2px;
+            text-transform:uppercase;
+        }
+
+        ul li {
+            display: inline-block;
+            padding-top: 20px;
+            a{
+                font-family: 'Icomoon';
+                font-size: 30px;
+                color: #fff;
+                text-decoration: none;
+            letter-spacing: 4px;
+            
+            }
+            
+            a:hover {color: @hovcolor;
+            padding: 10px;}
+     
+        }
+    }
+}
+
+
+
+/* Main section */
+
+.main{
+    background-color: @sidecolor;
+    display: flex;
+    justify-content: center;
+        
+
+
+.wrapper {
+    max-width: @container;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+
+    img{
+        width: 200px;
+        height: 200px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+    } 
+     
+    p{
+        font-family: @secfont, @ffont;
+        color: @bccolor;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px, 30px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        margin: 15px;
+    }
+    
+        h2 {
+        font-family: @mainfont, @ffont;
+        font-size: 40px;
+        padding-top: 50px;
+            padding-bottom: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+            color: @cred;
+    }
+    }
+    }
+
+
+.section {
+    background-color: @sidecolor;
+    display: flex;
+    justify-content: center;
+    
+    .links {
+        width: @container;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        align-items: center;
+        flex-wrap:wrap;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        
+        .viename {border: 3px solid @adcolor;
+        padding: 40px 80px;}
+        
+        .pirma,
+        .antra {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;   
+         
+        img {
+            width: 150px;
+            height: 150px;
+            padding: 20px;  
+        }
+        p{
+            text-align:center;
+            color: @fontcolor;
+            text-transform: uppercase;
+        }
+            a{ 
+            text-decoration: none;}
+    }  
+        a:hover {text-decoration: underline;
+        padding: 10px;}
+}
+}
+
+
+/* Footer */
+
+footer {
+    background-image: url(images/line.jpg);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    min-height: 30px;
+    
+    .combo {
+        width: @container;
+        display: flex;
+        flex-direction: row;
+        flex: 0 1 auto;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .copy {
+        color: #fff;
+        font-family: @mainfont;
+        font-size: 20px;
+    }
+    
+    .partners {
+    color: #fff;
+    font-family: @secfont;
+        font-size: 15px;
+}
+}
+
+
+/* Media */
+
+/* Uno */
+
+@media all and (max-width: 320px) {
+    
+    .header {
+    min-height: 300px;
+        max-width: 100%; 
+        .top {
+        padding: 8px;              
+        input[type="submit"] {
+            font-size: 9px;}
+   .search {
+font-size: 10px;
+line-height: 10px; 
+}
+.menu {
+    ul li {
+        max-height: 50%;
+ a {font-size: 10px;}
+              a:hover {padding: 8px;}
+}
+}
+}   
+    .center {
+        max-width: 30%;
+        max-height: 20%;
+        h1{font-size: 18px;}
+        ul li {a{
+                font-size: 15px;
+                letter-spacing: 2px;
+            }  
+        }
+    }
+}
+ 
+.main{max-width:100%;
+.wrapper {
+    max-width: 80%;
+    img{
+        width: 80px;
+        height: 80px;
+    } 
+    
+    p{
+        font-size: 15px;
+    }
+        h2 {
+        font-size: 20px;
+    }
+    }
+}
+
+
+.section {max-width: 100%;
+    .links {
+        width: 80%;
+        .viename {border: 2px solid @adcolor;
+            padding: 20px 40px;
+}    
+        .pirma,
+        .antra { width: 20%;
+        img {
+            width: 80px;
+            height: 80px;
+            padding: 10px;  
+        }
+    }
+}
+}    
+    
+ footer {
+     max-width: 100%;
+    min-height: 20px;
+    .copy {
+        font-size: 15px;
+    }
+     .partners {
+        font-size: 10px;
+}
+}  
+}
+  
+    /* Dos */
+    
+    @media all and (min-width: 321px) and (max-width: 720px) {
+        
+         .header {
+    min-height: 300px;
+        max-width: 100%; 
+        .top {
+        padding: 10px;              
+        input[type="submit"] {
+            font-size: 15px;}
+   .search {
+font-size: 15px;
+line-height: 12px; 
+}
+.menu {
+    ul li {
+        max-height: 50%;
+ a {font-size: 10px;}
+              a:hover {padding: 10px;}
+}
+}
+}   
+    .center {
+        max-width: 30%;
+        max-height: 20%;
+        h1{font-size: 22px;}
+        ul li {a{
+                font-size: 20px;
+                letter-spacing: 2px;
+            }  
+        }
+    }
+}
+ 
+.main{max-width: 100%;
+.wrapper {
+    max-width: 80%;
+    img{
+        width: 100px;
+        height: 100px;
+    } 
+    
+    p{
+        font-size: 18px;
+    }
+        h2 {
+        font-size: 23px;
+    }
+    }
+}
+
+.section {max-width: 100%;
+    .links {
+        max-width: 80%;
+        .viename {border: 2px solid @adcolor;
+            padding: 25px 50px;
+}    
+        .pirma,
+        .antra { width: 20%;
+        img {
+            width: 100px;
+            height: 100px;
+            padding: 10px;  
+        }
+
+    }
+}
+}    
+    
+ footer {
+     max-width: 100%;
+    min-height: 20px;
+    .copy {
+        font-size: 18px;
+    }
+     .partners {
+        font-size: 13px;
+}
+}                         
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
