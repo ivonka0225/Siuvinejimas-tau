@@ -1,91 +1,122 @@
 <!DOCTYPE html>
-
 <html lang="LT">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <meta name="description" content="Siuvinėjimas tau - išsiuvinėk savo pasaulį">    
-        
-    <link rel="stylesheet" href="../CSS/dizainai.css" type="text/css" media="all">  
-    <title>Siuvinėjimas tau - dizainai</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Siuvinėjimas tau - išsiuvinėk savo pasaulį">
+    <title>Siuvinėjimas tau - dizainai</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/dizainai.css" type="text/css" media="all">
 </head>
     
-    <body>
-      
-        <header class="header">
- <div class="top">
-     <nav class="menu">
-         <ul>
-            <li><a href="../home.html">Pagrindinis</a></li>
-             <li><a href="Galerija.html">Galerija</a></li>
-             <li><a href="dizainai.html">Dizainai</a></li>
-             <li><a href="kontaktai.html">Kontaktai</a></li>
-         </ul>
-     </nav>
-         <div class="search">
-             <input type="search" name="paieska">
-             <input type="submit" value="Ieškoti">
-         </div>     
-</div> 
-    <div class="name">
-    <h1>Siuvinėjimas tau</h1>
+<body>
+    <header class="header">
+        <div class="top">
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Pagrindinis</a></li>
+                    <li class="sub"><a href="galerija.html">Galerija</a>
+                        <ul class="submenu">
+                            <li><a href="knygos.html">Knygos</a></li>
+                            <li><a href="ranksluosciai.html">Rankšluoščiai</a></li>
+                            <li><a href="pagalves.html">Pagalvės</a></li>
+                            <li><a href="kepures.html">Kepurės</a></li>
+                            <li><a href="kita.html">Kiti darbai</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="dizainai.html">Dizainai</a></li>
+                    <li><a href="kontaktai.html">Kontaktai</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="search" name="paieska">
+                <input type="submit" value="Ieškoti">
             </div>
-</header>
-        
-        <main class="main">
-            <div class="wrapper">
-        <div class="logo">
-        <img src="../images/logoblack.png" alt="logo">
         </div>
-        
-        <div class="text">
-        <p> Šiame skyriuje norime pasiūlyti Jūsų dėmesiui kelias bandomąsias siuvinėjimo programėles. Taip pat galite užsakyti siuvinėjimo programas, sukurtas pagal Jūsų pateiktus eskizus. Galimi failų formatai yra <strong>EMB, DST, PES</strong> ir kiti. Lauksime Jūsų pastabų ir komentarų.</p>
-            
+        <div class="name">
+            <h1>Siuvinėjimas tau</h1>
         </div>
-            </div>
-        </main>
-        
-        <section class="section">
-            <div class="links">
-                
-                <div class="vytis">
-                <div> <img src="../images/Vytis.png"></div>
-                    <div><p>Atsisiųsti</p></div>
-                </div>
-                    
-                <div class="chegevara">
-                <div> <img src="../images/Che.png"></div>
-                    <div><p>Atsisiųsti</p></div>
-                </div>  
-                
-                <div class="varle">
-                <div> <img src="../images/varle.png"></div>
-                    <div><p>Atsisiųsti</p></div>
-                </div> 
-                
-                <div class="uztrauktukas">
-                <div> <img src="../images/uztrauktukas.png"></div>
-                    <div><p>Atsisiųsti</p></div>
-                </div>  
-            
-            
-            </div>
-        </section>
-        
-          <footer> 
-        <div class="combo">
-    <div class="copy">
-        &copy; Siuvinėjimas tau
-        </div>
-    <div class="partners">
-            Mūsų partneriai: UAB "Vitamino projektai"
-            </div>    
-        </div>
-        </footer>  
-    
-<script src="../scripts/jquery.js" type="text/javascript"></script>
-   <script src="../scripts/main.js" type="text/javascript"></script>
-</body>
+    </header>
 
+    <!-- Header for Smaller Screen -->
+
+    <div id="sheader">
+        <div class="small">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <div class="name">
+                <h1>Siuvinėjimas tau</h1>
+            </div>
+        </div>
+        <div class="bmenu">
+            <ul>
+                <a href="../index.html">
+                    <li>Pagrindinis</li>
+                </a>
+                <a href="../_files/galerija.html">
+                    <li>Galerija</li>
+                </a>
+                <a href="../_files/dizainai.html">
+                    <li>Dizainai</li>
+                </a>
+                <a href="../_files/kontaktai.html">
+                    <li>Kontaktai</li>
+                </a>
+                <li> <input type="search" name="paieska">
+                    <input type="submit" value="Ieškoti">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="../images/logoblack.png" alt="logo">
+            </div>
+
+            <div class="text">
+                <p> Šiame skyriuje norime pasiūlyti Jūsų dėmesiui kelias bandomąsias siuvinėjimo programėles. Taip pat galite užsakyti siuvinėjimo programas, sukurtas pagal Jūsų pateiktus eskizus. Galimi failų formatai yra <strong>EMB, DST, PES</strong> ir kiti. Lauksime Jūsų pastabų ir komentarų.</p>
+
+            </div>
+        </div>
+    </main>
+
+    <section class="section">
+        <div class="links">
+
+            <div class="vytis">
+                <div> <img src="../images/Vytis.png"></div>
+                <div><a href="#">Atsisiųsti</a></div>
+            </div>
+            <div class="chegevara">
+                <div> <img src="../images/Che.png"></div>
+                <div><a href="#">Atsisiųsti</a></div>
+            </div>
+            <div class="varle">
+                <div> <img src="../images/varle.png"></div>
+                <div><a href="#">Atsisiųsti</a></div>
+            </div>
+            <div class="uztrauktukas">
+                <div> <img src="../images/uztrauktukas.png"></div>
+                <div><a href="#">Atsisiųsti</a></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="combo">
+            <div class="copy">
+                &copy; 2017 Siuvinėjimas tau
+            </div>
+            <div class="partners">
+                Mūsų partneriai: UAB "Vitamino projektai"
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/jquery.js" type="text/javascript"></script>
+    <script src="../scripts/main.js" type="text/javascript"></script>
+</body>
 </html>
     

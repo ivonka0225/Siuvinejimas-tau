@@ -1,3 +1,0 @@
-Laba diena
-
-Viso gero!
